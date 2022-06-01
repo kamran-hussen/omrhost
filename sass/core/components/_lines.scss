@@ -1,0 +1,18 @@
+.line{
+    width: 1px;
+    height: 100%;
+    background-color: $secondary;
+    opacity: 0.04;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    &:nth-child(1){
+        left: 30.33%;
+    }
+    &:nth-child(2){
+        left: 47%;
+    }
+    &:nth-child(3){
+        right: 37.33%;
+    }
+}

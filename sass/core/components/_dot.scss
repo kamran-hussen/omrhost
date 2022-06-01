@@ -1,0 +1,83 @@
+// dot
+.dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    &.md{
+        width: 8px;
+        height: 8px;
+        + span{
+            margin-left: 10px;
+        }
+    }
+    &.lg{
+        width: 20px;
+        height: 20px;
+        + span{
+            margin-left: 18px;
+        }
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: currentColor;
+        border-radius: 50%;
+    }
+    + span {
+        margin-left: 8px;
+    }
+}
+.pipe{
+    position: relative;
+    padding-left: 22px;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background-color: $gray-200;
+        border-radius: $border-radius-sm;
+    }
+    &-top{
+        &::before{
+            background-color: $primary;
+            border-radius: 4px;
+            content: '';
+            display: block;
+            height: 3px;
+            width: 54px;
+            margin-bottom: 18px;
+        }
+        &.sm{
+            &::before{
+                width: 28px;
+                height: 2px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &-bottom{
+        &::after{
+            background-color: $primary;
+            border-radius: 4px;
+            content: '';
+            display: block;
+            height: 3px;
+            width: 54px;
+            margin-top: 18px;
+        }
+        &.sm{
+            &::after{
+                width: 28px;
+                height: 2px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

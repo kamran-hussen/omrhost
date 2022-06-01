@@ -1,0 +1,16 @@
+// width by name 
+$wide-sizes:  
+  xs      520px     576px, 
+  sm      640px     768px, 
+  md      860px     992px, 
+  lg      1140px    1200px, 
+  xl      1240px    1280px;
+
+//$name   $wide     $point
+@each $name, $wide, $point in $wide-sizes {
+  @media (min-width:#{$point}){
+    .wide-#{$name} {
+      max-width: $wide !important;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.media{
+    display: flex;
+    &.box{
+        background-color: $light-100;
+        border-radius: $border-radius;
+        padding: 30px;
+    }
+    &-head{
+        flex-shrink: 0;
+        + .media-body{
+            margin-left: 20px;
+        }
+    }
+    &-title{
+        font-weight: 600;
+    }
+    &-subtitle{
+        color: $secondary;
+        font-weight: 400;
+    }
+}

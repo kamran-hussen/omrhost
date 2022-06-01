@@ -1,0 +1,37 @@
+.block{
+    &-wrap{
+        margin-bottom: 22px;
+        &.md{
+            margin-bottom: 32px;
+        }
+    }
+    &-between{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        >*{
+            width: 100%;
+        }
+    }
+    &-content{
+        + .block-content{
+            margin-top: 10px;
+        }
+    }
+}
+@include media-breakpoint-up(sm){
+    .block{
+        &-between{
+            flex-direction: row;
+            >*{
+                width: auto;
+            }
+        }
+        &-content{
+            + .block-content{
+                margin-top: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+
+// variable
+@import "variables";
+@import "partials/mixins";
+
+// Included Bootstarp
+@import "extend/bootstrap/variables";
+@import "extend/bootstrap/bootstrap";
+@import "extend/bootstrap/extend";
+
+// Included Swiper js
+@import "vendors/swiper-bundle";
+
+// Include Core Style
+@import "core/style";

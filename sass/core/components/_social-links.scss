@@ -1,0 +1,34 @@
+.social{
+    &-links{
+        margin: -8px -10px;
+        display: inline-flex;
+        align-items: center;
+        >*{
+            padding: 8px 10px;
+            a{
+                color: $base-color;
+                transition: 0.2s;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+        .icon{
+            font-size: 14px;
+        }
+        &.sm{
+            margin: -5px;
+            >*{
+                padding: 5px;
+            }
+        }
+    }
+    &-wrap{
+        display: flex;
+        align-items: center;
+        .title{
+            margin-bottom: 0;
+            margin-right: 24px;
+        }
+    }
+}

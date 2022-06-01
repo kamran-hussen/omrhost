@@ -1,0 +1,52 @@
+.news{
+  &-ticker{
+    &-wrap{
+      height: 30px;
+      overflow: hidden;
+      -webkit-user-select: none;
+      display: flex;
+      .title{
+        line-height: 30px;
+        font-weight: 400;
+        color: $base-color;
+        margin-right: 12px;
+        font-size: 14px;
+      }
+    }
+    animation: ticker 10s cubic-bezier(1, 0, .5, 0) infinite;
+    -webkit-user-select: none;
+    li{
+      line-height: 30px;
+      a{
+        color: $secondary;
+        font-size: 14px;
+        -webkit-user-select: none;
+        transition: 0.2s;
+        &:hover{
+          color: $primary;
+        }
+      }
+    }
+    &:hover{
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes ticker {
+	0%   {
+    margin-top: 0
+  }
+	25%  {
+    margin-top: -30px
+  }
+	50%  {
+    margin-top: -60px
+  }
+	75%  {
+    margin-top: -90px
+  }
+	100% {
+    margin-top: 0
+  }
+}

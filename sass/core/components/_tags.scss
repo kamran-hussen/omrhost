@@ -1,0 +1,23 @@
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+    >*{
+        padding: 4px;
+    }
+    a{
+        border: 1px solid $light-300;
+        border-radius: $border-radius;
+        background-color: $white;
+        color: $secondary;
+        font-size: 13px;
+        display: block;
+        padding: 4px 16px;
+        transition: 0.3s;
+        &:hover{
+    
+            border-color: $light-500;
+            color: $base-color;
+        }
+    }
+}

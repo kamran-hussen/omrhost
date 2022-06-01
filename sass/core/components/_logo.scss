@@ -1,0 +1,18 @@
+.logo{
+    &-link{
+        position: relative;
+        display: inline-block;
+        align-items: center;
+    }
+    &-img{
+        &:not(:first-child) {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &-light{
+        opacity: 0;
+    }
+}

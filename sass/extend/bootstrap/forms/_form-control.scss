@@ -1,0 +1,19 @@
+.form{
+    &-control{
+        &-lg{
+            font-size: 1rem;
+        }
+    }
+}
+textarea {
+    height: 120px;
+}
+@include media-breakpoint-up(sm){
+    .form{
+        &-control{
+            &-lg{
+                font-size: 1.125rem;
+            }
+        }
+    }
+}

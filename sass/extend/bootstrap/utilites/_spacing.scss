@@ -1,0 +1,26 @@
+// spacing
+@each $size, $length in $spacers {
+    .g-#{$size} {
+        margin: - $length/2 !important;
+        > li,> div{
+            padding: $length/2 !important;
+        }
+    }
+    .gx-#{$size} {
+        margin-left: - $length/2 !important;
+        margin-right: - $length/2 !important;
+        > li,> div{
+            padding-left: $length/2 !important;
+            padding-right: $length/2 !important;
+        }
+    }
+    .gy-#{$size} {
+        margin-top: - $length/2 !important;
+        margin-bottom: - $length/2 !important;
+        > li,> div{
+            padding-top: $length/2 !important;
+            padding-bottom: $length/2 !important;
+        }
+    }
+}
+

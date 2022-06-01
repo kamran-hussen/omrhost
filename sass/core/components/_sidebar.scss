@@ -1,0 +1,63 @@
+.sidebar{
+    &-item{
+        + .sidebar-item{
+            margin-top: 2.875rem;
+        }
+        .card-horizontal .card-img-wrap.sm {
+            width: 104px;
+        }
+        .title{
+            font-size: 1.375rem;
+        }
+        &-s2{
+            box-shadow: $box-shadow-sm;
+            background-color: $white;
+            padding: $card-spacer-y $card-spacer-x;
+            border-radius: $border-radius;
+        }
+    }
+}
+
+.advertise{
+    &-wrap{
+        color: $secondary;
+        display: block;
+        img{
+            width: 100%;
+        }
+        &:hover{
+            color: $secondary;
+        }
+        img{
+            border-radius: $border-radius;
+        }
+    }
+    &-content{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 18, 19, 0)), to(#121213));
+        background: -webkit-linear-gradient(top, rgba(18, 18, 19, 0) 0%, #121213 100%);
+        background: -o-linear-gradient(top, rgba(18, 18, 19, 0) 0%, #121213 100%);
+        background: linear-gradient(180deg, rgba(18, 18, 19, 0) 0%, #121213 100%);
+        border-radius: $border-radius;
+        display: flex;
+        align-items: flex-end;
+        padding: 30px;
+        .title{
+            margin-bottom: 0;
+            color: $white;
+        }
+        .text-num{
+            color: $white;
+            opacity: 0.8;
+            font-size: 12px;
+            font-weight: 300;
+        }
+        &-wrap{
+            position: relative;
+        }
+    }
+}

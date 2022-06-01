@@ -1,0 +1,90 @@
+.is{
+    &-theme{
+        .container{
+            position: relative;
+            z-index: 2;
+        }
+        .header-top-menu li a,
+        .list-link a {
+            color: $white;
+            opacity: 0.8;
+            font-weight: 300;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        .logo{
+            &-light{
+                opacity: 1;
+            }
+            &-dark{
+                opacity: 0;
+            }
+        }
+        .header-top-social span,
+        .footer-item .title,
+        .footer-copyright,
+        .footer-copyright a,
+        .social-wrap .title,
+        .social-links > * a,
+        .cta-body .title,
+        .cta-body p,
+        .footer-item .text,
+        .list-icon > *,
+        .list-icon > * a,
+        .subscribe-wrap p,
+        .list-tag >* a {
+            color: $white;
+        }
+        .social-links > * a,
+        .header-top-social span,
+        .footer-copyright,
+        .footer-copyright a,
+        .footer-item .text,
+        .list-icon > *,
+        .list-icon > * a,
+        .subscribe-wrap p,
+        .list-tag >* a {
+            opacity: 0.6;
+        }
+        .footer-copyright,
+        .footer-item .text,
+        .list-icon > *,
+        .subscribe-wrap p,
+        .list-tag >* a {
+            font-weight: 300;
+        }
+        .footer-copyright a:hover,
+        .list-tag >* a:hover {
+            opacity: 1;
+        }
+        .pipe::before{
+            background-color: $gray-700;
+        }
+        .list-link.hover-line a::after{
+            background-color: $white;
+        }
+        .footer-bottom{
+            border-top-color: $gray-900;
+        }
+        .social-links > * a{
+            &:hover {
+                opacity: 1;
+                color: $primary;
+            }
+        }
+    }
+}
+.bg{
+    &-dark{
+        .line{
+            background-color: $white;
+        }
+        .list-tag >* a{
+            background-color: rgba($white, 0.1);
+            &:hover{
+                background-color: rgba($white, 0.2);
+            } 
+        }
+    }
+}

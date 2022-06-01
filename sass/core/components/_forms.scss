@@ -1,0 +1,17 @@
+.form{
+    &-group{
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }
+}
+.subscribe-wrap{
+    p{
+        font-size: 15px;
+    }
+    &.has-bg{
+        background-color: rgba(255,255,255, 0.06);
+        border-radius: $border-radius;
+        padding: 30px;
+    }
+}

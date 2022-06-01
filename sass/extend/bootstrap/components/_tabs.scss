@@ -1,0 +1,45 @@
+.nav{
+    &-tabs{
+        .nav{
+            &-link{
+                border-radius: $nav-tabs-border-radius;
+                &.active{
+                    box-shadow: $nav-tabs-box-shadow;
+                }
+            }
+        }
+        &-s1{
+            .nav{
+                &-item{
+                    &:last-child{
+                        .nav-link{
+                            padding-right: 0;
+                        }
+                    }
+                }
+                &-link{
+                    border-radius: 0;
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        width: 5px;
+                        height: 5px;
+                        background-color: transparent;
+                        border-radius: 50%;
+                        top: 50%;
+                        left: 4px;
+                        transform: translateY(-50%);
+                    }
+                    &.active{
+                        box-shadow: none;
+                        color: $primary;
+                        &::before{
+                            background-color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

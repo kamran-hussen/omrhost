@@ -1,0 +1,112 @@
+.single{
+    &-img{
+        width: 100%;
+        border-radius: $border-radius;
+    }
+    &-entry{
+        &-wrap{
+            .title {
+                line-height: 1.4;
+            }
+            h4{
+                font-size: 1.375rem;
+            }
+            .post-cat + .title {
+                margin-top: 1rem;
+            }
+            p{
+                line-height: 1.7;
+                margin-bottom: 1.5rem;
+            }
+            p,
+            ul {
+                font-size: 15px;
+                color: $base-color;
+            }
+            h6,
+            ul:not(.post-cat):not(.social-links):not(.tags) {
+                margin-bottom: 1rem;
+            }
+            .sub-title {
+                font-weight: 600;
+            }
+            .bg-box{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .row {
+                padding-bottom: 1.875rem;
+            }
+        }
+        &-head{
+            border-bottom: 1px solid $light-300;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        &-content{
+            &-group{
+                display: flex;
+            }
+        }
+        &-post{
+            &-share{
+                width: 120px;
+                flex-shrink: 0;
+                + .single-entry-content{
+                    padding-left: 24px;
+                }
+            }
+        }
+        &-action{
+            &-group{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+// navigation-post
+.navigation-post{
+    display: flex;
+    
+    &-item{
+        flex-grow: 1;
+        width: 50%;
+        padding-bottom: 30px;
+        position: relative;
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+        &.prev{
+            padding-right: 160px;
+        }
+        &.next{
+            padding-left: 160px;
+            text-align: right;
+        }
+        &::after{
+            content: " ";
+            display: inline-block;
+            width: 1px;
+            height: 50%;
+            background: $light-300;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        a{
+            color: $base-color;
+            font-weight: 600;
+            display: block;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}

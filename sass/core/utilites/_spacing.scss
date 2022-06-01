@@ -1,0 +1,31 @@
+.section{
+    &-space{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &-sm{
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        &-t{
+            padding-top: 60px;
+        }
+        &-b{
+            padding-bottom: 60px;
+        }
+    }
+}
+// Breakpoint
+@include media-breakpoint-up(lg){
+    .section{
+        &-space{
+            padding-top: 100px;
+            padding-bottom: 100px;
+            &-t{
+                padding-top: 100px;
+            }
+            &-b{
+                padding-bottom: 100px;
+            }
+        }
+    }
+}

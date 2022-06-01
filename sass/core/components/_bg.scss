@@ -1,0 +1,14 @@
+.set{
+    &-bg{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+.bg{
+    &-box{
+        background-color: $light-100;
+        border-radius: $border-radius;
+        padding: 20px 26px;
+    }
+}
