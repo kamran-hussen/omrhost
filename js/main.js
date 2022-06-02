@@ -114,30 +114,7 @@ window.addEventListener("load", function (){
     const preloader = document.querySelector(".preloader");
     preloader.style.display = " none";                  
 });
-/*  =======================================================
-  Search box
-========================================================== */
-function searchBox(selector, selectorTwo, selectorThree){
-    let buttonElem = document.querySelectorAll(selector);
-    let searchElem = document.querySelector(selectorTwo);
-    let buttonCloseElem = document.querySelectorAll(selectorThree);
-    //search open
-    buttonElem.forEach(item => {
-        item.addEventListener('click', function(e){
-            e.preventDefault();
-            searchElem.classList.add('active');
-        })
-    })
-    //search close
-    buttonCloseElem.forEach(item => {
-        item.addEventListener('click', function(e){
-            e.preventDefault();
-            searchElem.classList.remove('active');
-        })
-    })
-}
 
-searchBox('.search-toggle', '.search-container', '.search-toggle-cancel');
 
 /*  =======================================================
   Scroll to top

@@ -1,136 +1,33 @@
 .swiper{
-    &-carousel{
-        margin: -15px;
-        &-s2{
-            overflow: inherit;
-        }
-    }
-    &-slide{
-        padding: 15px;
-    }
-    &.no{
-        &-gap{
-            &.swiper-carousel{
-                margin: 0;
-            }
-            .swiper-slide{
-                padding: 0;
-            }
-        }
-    }
     &-buttons{
-        display: flex;
-        align-items: center;
-        position: absolute;
-        bottom: 60px;
-        right: 60px;
         .swiper-button-prev{
-            left: -36px;
+            left: 0;
             &::after{
                 content: "\f104";
             }
         }
         .swiper-button-next{
-            right: auto;
+            right: 0;
             &::after{
                 content: "\f105";
             }
         }
         .swiper-button-prev,
         .swiper-button-next{
-            position: inherit;
-            top: auto;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background-color: rgba($white, 0.2);
+            width: 40px;
+            height: 90px;
+            background-color: $primary;
             transition: 0.3s;
+            top: 50%;
+            transform: translateY(-50%);
             &:hover{
-                background-color: $white;
-                &::after{
-                    color: $base-color;
-                }
+                background-color: $base-color;
             }
             &::after{
                 font-family: 'Font Awesome 5 Pro';
                 color: $white;
-                font-size: 22px;
-                font-weight: 300;
-            }
-        }
-        &-s2{
-            bottom: 0;
-            right: auto;
-            left: 50px;
-            .swiper-button-prev,
-            .swiper-button-next{
-                background-color: $white;
-                box-shadow: $box-shadow-sm;
-                &:hover{
-                    background-color: $primary;
-                    &::after{
-                        color: $white;
-                    }
-                }
-                &::after{
-                    color: $base-color;
-                }
-            }
-        }
-        &-s3{
-            bottom: auto;
-            top: 70px;
-            left: 85px;
-        }
-    }
-    &-slide{
-        &-animate{
-            .swiper-slide-active .card-body-inner {
-                animation: fadeInUp 2.5s;
+                font-size: 28px;
             }
         }
     }
-}
-.swiper-button-prev.swiper-button-disabled,
-.swiper-button-next.swiper-button-disabled{
-     opacity: 0.6;
-}
-
-@keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-}
-
-@include media-breakpoint-up(md){
-     .swiper{
-        &-buttons{
-            bottom: 70px;
-            right: 90px;
-            .swiper-button-prev{
-                left: -50px;
-            }
-            .swiper-button-prev,
-            .swiper-button-next{
-                width: 44px;
-                height: 44px;
-            }
-            &-s2{
-                bottom: 0;
-                right: auto;
-                left: 60px;
-            }
-            &-s3{
-                bottom: auto;
-                top: 70px;
-                left: 85px;
-            }
-        }
-     }
 }

@@ -1,32 +1,25 @@
 .icon{
-    &-wbg{
-        background-color: $white;
+    &-element{
+        &-wrap{
+            border: 1px solid $base-color;
+            padding: 4px;
+            border-radius: 50%;
+            background-color: $white;
+            width: 48px;
+            height: 48px;
+        }
+        background-color: $primary;
         width: 38px;
         height: 38px;
         font-size: 16px;
-        color: $base-color;
+        color: $white;
         display: grid;
         place-items: center;
-        &[class*="bg-"]{
+        &:hover{
             color: $white;
-            &:hover{
-                color: $white;
-            }
         }
         &.circle{
             @include border-radius(50%);
-        }
-        &.sm{
-            width: 32px;
-            height: 32px;
-            font-size: 13px;
-        }
-    }
-    &-text{
-        display: flex;
-        align-items: center;
-        &.sm{
-            font-size: 13px;
         }
     }
 }

@@ -3,12 +3,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        position: relative;
     }
 }
-.bg{
-    &-box{
-        background-color: $light-100;
-        border-radius: $border-radius;
-        padding: 20px 26px;
-    }
-}
+

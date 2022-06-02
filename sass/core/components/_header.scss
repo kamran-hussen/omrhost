@@ -98,17 +98,15 @@ $header-menu-width: 260px;
                 height: 34px;
                 background-color: $light-400;
             }
-            a{
+            a:not(.icon-element){
                 color: $base-color;
                 font-size: 14px;
             }
-            .user-action{
-                border: 1px solid $base-color;
-                padding: 4px;
-                border-radius: 50%;
+            .icon-element-wrap{
                 position: absolute;
                 left: 0;
                 bottom: -48px;
+                z-index: 1;
             }
         }
     }

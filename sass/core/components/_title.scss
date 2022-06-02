@@ -1,21 +1,13 @@
-.title{
-    font-weight: 600;
-    &-mask{
-        color: $base-color;
-        background-color: $white;
-        padding: 8px 14px;
-        display: inline-block;
-        border-radius: $border-radius;
+.page{
+    &-title{
+        font-weight: 700;
+        margin-bottom: 20px;
+        &.xl{
+            font-size: 46px;
+            line-height: 1.4;
+        }
     }
-}
-//hover line
-.hover-underline{
-    position: relative;
-    background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
-    color: inherit;
-    background-repeat: no-repeat;
-    display: inline;
-    background-size: 0px 2px;
-    background-position: 0px 100%;
-    transition: 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)
+    &-desc{
+        line-height: 1.8;
+    }
 }

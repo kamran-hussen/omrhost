@@ -1,0 +1,50 @@
+.info{
+    &-box{
+        &-wrap{
+            display: flex;
+            .info-box{
+                flex: 1;
+            }
+        }
+        background-color: $primary;
+        color: $white;
+        padding: 0 30px 30px 30px;
+        transition: 0.4s;
+        margin-bottom: -50px;
+        .icon-element-wrap{
+            margin-top: -25px;
+        }
+        .icon-element-wrap + .title{
+            margin-top: 22px;
+        }
+        .title{
+            font-weight: 500;
+            color: $white;
+            margin-bottom: 12px;
+            transition: 0.4s;
+        }
+        .btn-link{
+            color: $white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.4s;
+        }
+        &:hover{
+            background-color: $white;
+            color: $base-color;
+            margin-top: -40px;
+            .icon-element{
+                background-color: $base-color;
+                &-wrap{
+                    border-color: $primary;
+                }
+            }
+            .title{
+                color: $base-color;
+            }
+            a{
+                color: $primary;
+            }
+        }
+    }
+}
