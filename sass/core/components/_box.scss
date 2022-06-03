@@ -1,19 +1,14 @@
 .info{
     &-box{
         &-wrap{
-            display: flex;
-            .info-box{
-                flex: 1;
-            }
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 20px;
         }
         background-color: $primary;
         color: $white;
-        padding: 0 30px 30px 30px;
+        padding: 30px;
         transition: 0.4s;
-        margin-bottom: -50px;
-        .icon-element-wrap{
-            margin-top: -25px;
-        }
         .icon-element-wrap + .title{
             margin-top: 22px;
         }
@@ -32,7 +27,6 @@
         &:hover{
             background-color: $white;
             color: $base-color;
-            margin-top: -40px;
             .icon-element{
                 background-color: $base-color;
                 &-wrap{
@@ -44,6 +38,72 @@
             }
             a{
                 color: $primary;
+            }
+        }
+        &-s1{
+            background-color: transparent;
+            padding: 0;
+            color: $base-color;
+            .title{
+                color: $base-color;
+                font-weight: 600;
+            }
+            .text{
+                font-size: 15px;
+                color: $secondary;
+            }
+            .info-icon{
+                position: relative;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+                .icon{
+                    font-size: 28px;
+                }
+                &::after{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    content: "";
+                    width: 60px;
+                    height: 1px;
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(sm){
+    .info-box{
+        &-wrap{
+            grid-template-columns: auto auto;
+        }
+    }
+}
+@include media-breakpoint-up(md){
+    .info-box{
+        &-wrap{
+            grid-template-columns: auto auto auto;
+        }
+    }
+}
+@include media-breakpoint-up(xxl){
+    .info-box{
+        margin-bottom: -50px;
+        padding-top: 0;
+        &-wrap{
+            grid-template-columns: auto auto auto auto auto;
+            grid-gap: 0;
+        }
+        .icon-element-wrap{
+            margin-top: -25px;
+        }
+        &:hover{
+            margin-top: -40px;
+        }
+        &-s1{
+            margin-bottom: 0;
+            &:hover{
+                margin-top: 0;
             }
         }
     }

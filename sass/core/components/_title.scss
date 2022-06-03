@@ -1,13 +1,22 @@
 .page{
+    &-subtitle{
+        font-weight: 400;
+        
+    }
     &-title{
         font-weight: 700;
         margin-bottom: 20px;
+    }
+    &-desc{
+        line-height: 1.8;
+    }
+}
+
+@include media-breakpoint-up(md){
+    .page{
         &.xl{
             font-size: 46px;
             line-height: 1.4;
         }
-    }
-    &-desc{
-        line-height: 1.8;
     }
 }

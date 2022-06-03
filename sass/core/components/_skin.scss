@@ -21,11 +21,13 @@
         .social-links a,
         .page-title,
         h1,h2,h3,h4,h5,h6,
-        p{
+        p,
+        span{
             color: $white;
         }
         .header-top-social span,
-        .social-links a{
+        .social-links a,
+        .page-subtitle{
             opacity: 0.7;
         }
         .social-links a:hover{

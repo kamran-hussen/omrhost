@@ -19,6 +19,7 @@ $header-menu-width: 260px;
     }
     &-toggle{
         z-index: 1001;
+        margin-right: 20px;
     }
     &-top{
         padding-bottom: 8px;
@@ -88,25 +89,14 @@ $header-menu-width: 260px;
         }
         &-action{
             position: relative;
-            padding-left: 90px;
-            &::after{
-                position: absolute;
-                content: "";
-                top: -18px;
-                left: 25px;
-                width: 1px;
-                height: 34px;
-                background-color: $light-400;
-            }
+            display: flex;
+            align-items: center;
             a:not(.icon-element){
                 color: $base-color;
                 font-size: 14px;
             }
             .icon-element-wrap{
-                position: absolute;
-                left: 0;
-                bottom: -48px;
-                z-index: 1;
+                margin-right: 10px;
             }
         }
     }
@@ -133,9 +123,22 @@ $header-menu-width: 260px;
                 padding: $header-menu-gray-gap;
             }
             &-action{
-                .btn-icon{
-                    width: 50px;
-                    height: auto;
+                padding-left: 90px;
+                display: block;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    top: -18px;
+                    left: 25px;
+                    width: 1px;
+                    height: 34px;
+                    background-color: $light-400;
+                }
+                .icon-element-wrap{
+                    position: absolute;
+                    left: 0;
+                    bottom: -48px;
+                    z-index: 1;
                 }
             }
         }
